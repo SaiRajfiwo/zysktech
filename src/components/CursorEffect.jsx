@@ -2,14 +2,32 @@ import React, { useState, useEffect } from "react";
 
 const CursorEffect = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    // Check screen width to determine if it's a mobile device
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 768); // Adjust breakpoint if needed
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) return; // Don't track cursor on mobile
+
     const updateCursor = (e) => {
       setPosition({ x: e.clientX, y: e.clientY });
     };
+
     window.addEventListener("mousemove", updateCursor);
     return () => window.removeEventListener("mousemove", updateCursor);
-  }, []);
+  }, [isMobile]);
+
+  if (isMobile) return null; // Completely disable cursor effect on mobile
 
   return (
     <div className="pointer-events-none fixed top-0 left-0 w-full h-full">
