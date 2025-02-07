@@ -21,7 +21,7 @@ const Footer = () => {
                 <li key={index} className="hover:text-rose-700 transition-transform duration-200 hover:scale-104 cursor-pointer flex items-center">
                   {link}
                   {title === "Product" && link === "Solutions" && (
-                    <img src="/src/assets/new.png" alt="icon" className="ml-2 mt-1 w-8 h-4" />
+                    <img src="/new.png" alt="new" className="ml-2 mt-1 w-8 h-4" />
                   )}
                 </li>
               ))}
