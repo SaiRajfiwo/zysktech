@@ -14,7 +14,7 @@ const Hero = () => {
           <span className="bg-white transition-transform duration-200 hover:scale-109 text-rose-600 px-2 py-0.5 font-semibold rounded-full mr-4 text-xs border border-rose-600">
             New Feature
           </span>
-          Check out the team dashboard <img src="/src/assets/rightarrow.png"></img>
+          Check out the team dashboard <img src="/rightarrow.png" alt="arrow"></img>
         </a>
       </div>
 
