@@ -32,7 +32,7 @@ const Footer = () => {
 
       {/* Copyright and Logo Section (Responsive) */}
         <div className="border-t border-gray-200 mt-16 py-2 px-6 flex flex-col sm:flex-row items-center justify-between text-center sm:text-left">
-          <img src="/src/assets/zysk.png" alt="Zysk Logo" className="w-20 sm:w-24 sm:ml-20 mb-2 sm:mb-0" />
+          <img src="/zysk.png" alt="Zysk Logo" className="w-20 sm:w-24 sm:ml-20 mb-2 sm:mb-0" />
           <p className="text-gray-400 text-sm sm:text-m sm:mr-24">
             © 2077 zysktechnologies. All rights reserved.
           </p>

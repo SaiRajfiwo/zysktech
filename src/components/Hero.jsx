@@ -32,7 +32,7 @@ const Hero = () => {
         {/* Buttons */}
         <div className="mt-6 flex flex-col md:flex-row justify-center space-x-0 md:space-x-6 space-y-4 md:space-y-0">
           <button className="w-full md:w-auto transition-transform duration-200 hover:scale-109 bg-white hover:bg-gray-300 text-black border border-black px-5 py-2 rounded-full flex items-center justify-center">
-            <img src="/src/assets/play.png" alt="icon" className="w-5 h-5 mr-2" />
+            <img src="/play.png" alt="icon" className="w-5 h-5 mr-2" />
             Demo
           </button>
 
@@ -45,7 +45,7 @@ const Hero = () => {
         {/* Hero Image */}
         <div className="mt-10 md:mt-0 md:w-1/1 px-5">
           <img
-            src="/src/assets/Container.png"
+            src="/Container.png"
             alt="Hero Image"
             className="w-full h-auto rounded-lg"
           />
@@ -58,12 +58,12 @@ const Hero = () => {
 
         {/* Logos Section */}
         <div className="md:w-1/1 mt-10 md:mt-0 px-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
-          <img src="/src/assets/logo1.png" alt="Logo 1" className="w-full h-auto rounded-lg" />
-          <img src="/src/assets/logo2.png" alt="Logo 2" className="w-full h-auto rounded-lg" />
-          <img src="/src/assets/logo3.png" alt="Logo 3" className="w-full h-auto rounded-lg" />
-          <img src="/src/assets/logo4.png" alt="Logo 4" className="w-full h-auto rounded-lg" />
-          <img src="/src/assets/logo5.png" alt="Logo 5" className="w-full h-auto rounded-lg" />
-          <img src="/src/assets/logo6.png" alt="Logo 6" className="w-full h-auto rounded-lg" />
+          <img src="/logo1.png" alt="Logo 1" className="w-full h-auto rounded-lg" />
+          <img src="/logo2.png" alt="Logo 2" className="w-full h-auto rounded-lg" />
+          <img src="/logo3.png" alt="Logo 3" className="w-full h-auto rounded-lg" />
+          <img src="/logo4.png" alt="Logo 4" className="w-full h-auto rounded-lg" />
+          <img src="/logo5.png" alt="Logo 5" className="w-full h-auto rounded-lg" />
+          <img src="/logo6.png" alt="Logo 6" className="w-full h-auto rounded-lg" />
         </div>
         
       </div>

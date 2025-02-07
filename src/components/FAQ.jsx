@@ -89,7 +89,7 @@ const FAQ = () => {
         <div className="flex justify-center items-center bg-gray-50">
         <div className="flex flex-col justify-center items-center bg-gray-50 p-6 "> 
           <br/><br/> 
-          <img src="/src/assets/pfp3.png" alt="pfp Logo" className="h-14" />
+          <img src="/pfp3.png" alt="profile3" className="h-14" />
           <br/>
           <h1 className="text-2xl font-bold text-gray-900">Still have questions?</h1>
           <p className="text-gray-600 text-center mt-2">

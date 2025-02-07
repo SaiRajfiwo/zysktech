@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center ">
         {/* Brand Logo */}
         <a href="#">
-          <img src="/src/assets/zysk.png" alt="Brand Logo" className="h-8" />
+          <img src="/zysk.png" alt="Zysk Logo" className="h-8" />
         </a>
 
         {/* Hamburger icon for mobile */}
@@ -42,7 +42,7 @@ const Navbar = () => {
 
         {/* Profile image on the right (Desktop) */}
         <a href="#" className="hidden md:flex justify-end absolute right-30">
-          <img src="/src/assets/pfp1.png" alt="Profile" className="h-10" />
+          <img src="/src/assets/pfp1.png" alt="profile1" className="h-10" />
         </a>
       </div>
 
@@ -83,7 +83,7 @@ const Navbar = () => {
 
         {/* Profile Image in Mobile Menu */}
         <div className="mt-8 flex justify-center">
-          <img src="/src/assets/pfp1.png" alt="Profile" className="h-12" />
+          <img src="/pfp1.png" alt="Profile" className="h-12" />
         </div>
       </div>
     </nav>

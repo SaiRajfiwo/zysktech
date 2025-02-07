@@ -4,31 +4,31 @@ import { motion } from "framer-motion";
 const Blog = () => {
   const blogs = [
     {
-      image: "/src/assets/blog1.png",
+      image: "/blog1.png",
       heading: "Design",
       title: "UX review presentations",
       description: "How do you create compelling presentations that wow your colleagues and impress your managers?",
       author: "Olivia Rhye",
       date: "20 Jan, 2024",
-      pfp: "/src/assets/pfp1.png",
+      pfp: "/pfp1.png",
     },
     {
-      image: "/src/assets/blog2.png",
+      image: "/blog2.png",
       heading: "Product",
       title: "Migrating to Linear 101",
       description: "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here's how to get started.",
       author: "Phoenix Baker",
       date: "19 Jan, 2024",
-      pfp: "/src/assets/pfp4.png",
+      pfp: "/pfp4.png",
     },
     {
-      image: "/src/assets/blog3.png",
+      image: "/blog3.png",
       heading: "Software Engineering",
       title: "Building your API stack",
       description: "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.",
       author: "Lana Steiner",
       date: "18 Jan, 2024",
-      pfp: "/src/assets/pfp5.png",
+      pfp: "/pfp5.png",
     },
   ];
 
