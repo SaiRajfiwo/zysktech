@@ -42,7 +42,7 @@ const Navbar = () => {
 
         {/* Profile image on the right (Desktop) */}
         <a href="#" className="hidden md:flex justify-end absolute right-30">
-          <img src="/src/assets/pfp1.png" alt="profile1" className="h-10" />
+          <img src="/pfp1.png" alt="profile1" className="h-10" />
         </a>
       </div>
 

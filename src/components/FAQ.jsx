@@ -61,8 +61,8 @@ const FAQ = () => {
               <img
                 src={
                   openIndex === index
-                    ? "/src/assets/minus.png"
-                    : "/src/assets/plus.png"
+                    ? "/minus.png"
+                    : "/plus.png"
                 }
                 alt={openIndex === index ? "Collapse" : "Expand"}
                 className="w-6 h-6 transition-transform duration-200 hover:scale-110"
