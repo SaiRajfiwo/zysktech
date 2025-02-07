@@ -58,12 +58,14 @@ const Hero = () => {
 
         {/* Logos Section */}
         <div className="md:w-1/1 mt-10 md:mt-0 px-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
-          <img src="/logo1.png" alt="Logo 1" className="w-full h-auto rounded-lg" />
-          <img src="/logo2.png" alt="Logo 2" className="w-full h-auto rounded-lg" />
-          <img src="/logo3.png" alt="Logo 3" className="w-full h-auto rounded-lg" />
-          <img src="/logo4.png" alt="Logo 4" className="w-full h-auto rounded-lg" />
-          <img src="/logo5.png" alt="Logo 5" className="w-full h-auto rounded-lg" />
-          <img src="/logo6.png" alt="Logo 6" className="w-full h-auto rounded-lg" />
+          {["logo1.png", "logo2.png", "logo3.png", "logo4.png", "logo5.png", "logo6.png"].map((logo, index) => (
+            <img 
+              key={index} 
+              src={`/${logo}`} 
+              alt={`Logo ${index + 1}`} 
+              className="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-110 hover:opacity-100" 
+            />
+          ))}
         </div>
         
       </div>

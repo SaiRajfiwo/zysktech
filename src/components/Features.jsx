@@ -73,9 +73,14 @@ const Features = () => {
         <br/><br/>
 
         <div className="bg-gray-50 w-full py-10 flex justify-center px-4">
-  <div className="p-6 flex flex-col items-center text-center ">
+    <div className="p-6 flex flex-col items-center text-center ">
     {/* Logo */}
-    <img src="/logo7.png" alt="Logo 7" className="w-20 md:w-24 mb-4" />
+      <img 
+        src="/logo7.png" 
+        alt="Logo 7" 
+        className="w-20 md:w-24 mb-4 transition-transform duration-300 ease-in-out hover:scale-110 hover:opacity-100"
+      />
+
     
     {/* Quote Text */}
     <p className="text-black text-2xl md:text-4xl font-semibold leading-snug md:leading-normal mb-6">
@@ -83,7 +88,12 @@ const Features = () => {
     </p>
 
     {/* Profile Picture */}
-    <img src="/pfp2.png" alt="profile2" className="w-14 h-14 md:w-16 md:h-16 rounded-full mb-2" />
+    <img 
+      src="/pfp2.png" 
+      alt="profile2" 
+      className="w-14 h-14 md:w-16 md:h-16 rounded-full mb-2 transition-transform duration-300 ease-in-out hover:scale-110 " 
+    />
+
 
     {/* User Info */}
     <h3 className="text-lg md:text-xl font-semibold text-gray-900">Candice Wu</h3>
