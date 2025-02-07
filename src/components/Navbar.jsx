@@ -13,7 +13,7 @@ const Navbar = () => {
 
         {/* Hamburger icon for mobile */}
         <button
-          className="md:hidden ml-52 text-black"
+          className="md:hidden ml-58 text-black"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           <svg
@@ -35,8 +35,18 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-10">
           <li><a href="#" className="hover:text-rose-600 font-bold ml-15">Home</a></li>
-          <li><a href="#" className="hover:text-rose-600 font-bold">Products ⮟</a></li>
-          <li><a href="#" className="hover:text-rose-600 font-bold">Resources ⮟</a></li>
+          <li>
+          <a href="#" className="hover:text-rose-600 font-bold flex items-center">
+            Products
+            <img src="/downarrow.png" alt="Arrow" className="w-4 h-4" />
+          </a>
+        </li>
+        <li>
+          <a href="#" className="hover:text-rose-600 font-bold flex items-center">
+            Resources
+            <img src="/downarrow.png" alt="Arrow" className="w-4 h-4" />
+          </a>
+        </li>
           <li><a href="#" className="hover:text-rose-600 font-bold">Pricing</a></li>
         </ul>
 
@@ -74,12 +84,27 @@ const Navbar = () => {
         </button>
 
         {/* Mobile Menu Items */}
-        <ul className="mt-16 space-y-6 text-center">
-          <li><a href="#" className="block text-black font-bold">Home</a></li>
-          <li><a href="#" className="block text-black font-bold">Products ⮟</a></li>
-          <li><a href="#" className="block text-black font-bold">Resources ⮟</a></li>
-          <li><a href="#" className="block text-black font-bold">Pricing</a></li>
-        </ul>
+          <ul className="mt-16 space-y-6 text-center">
+            <li>
+              <a href="#" className="block text-black font-bold hover:text-rose-600 active:text-rose-600">Home</a>
+            </li>
+            <li>
+              <a href="#" className=" text-black font-bold flex items-center justify-center hover:text-rose-600 active:text-rose-600">
+                Products
+                <img src="/downarrow.png" alt="Arrow" className="w-4 h-4 ml-2" />
+              </a>
+            </li>
+            <li>
+              <a href="#" className=" text-black font-bold flex items-center justify-center hover:text-rose-600 active:text-rose-600">
+                Resources
+                <img src="/downarrow.png" alt="Arrow" className="w-4 h-4 ml-2" />
+              </a>
+            </li>
+            <li>
+              <a href="#" className="block text-black font-bold hover:text-rose-600 active:text-rose-600">Pricing</a>
+            </li>
+          </ul>
+
 
         {/* Profile Image in Mobile Menu */}
         <div className="mt-8 flex justify-center">

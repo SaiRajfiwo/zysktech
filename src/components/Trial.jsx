@@ -14,17 +14,18 @@ const Trial = () => {
       </p>
 
       {/* Buttons */}
-      <div className="mt-6 flex flex-col md:flex-row gap-4">
-        {/* Learn More Button (Transparent) */}
-        <button className="border border-gray-500 transition-transform duration-200 hover:scale-109 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-300">
-          Learn More
-        </button>
+        <div className="mt-6 flex flex-col md:flex-row gap-4">
+          {/* Learn More Button (Transparent) */}
+          <button className="border border-gray-500 transition-transform duration-200 hover:scale-110 active:scale-95 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-300 active:bg-gray-400">
+            Learn More
+          </button>
 
-        {/* Get Started Button (Red) */}
-        <button className="bg-red-500 transition-transform duration-200 hover:scale-109 text-white px-6 py-2 rounded-lg hover:bg-red-700">
-          Get Started
-        </button>
-      </div>
+          {/* Get Started Button (Red) */}
+          <button className="bg-red-500 transition-transform duration-200 hover:scale-110 active:scale-95 text-white px-6 py-2 rounded-lg hover:bg-red-700 active:bg-red-800">
+            Get Started
+          </button>
+        </div>
+
     </div>
   );
 };

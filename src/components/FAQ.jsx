@@ -54,21 +54,18 @@ const FAQ = () => {
         {faqs.map((faq, index) => (
           <div key={index} className="py-6">
             <button
-              className="w-full flex justify-between items-center text-lg font-semibold text-gray-900 focus:outline-none transition-all duration-300"
+              className="w-full flex justify-between items-center text-left text-lg font-semibold text-gray-900 focus:outline-none transition-all duration-300"
               onClick={() => toggleFAQ(index)}
             >
-              {faq.question}
+              <span className="text-left">{faq.question}</span>
               <img
-                src={
-                  openIndex === index
-                    ? "/minus.png"
-                    : "/plus.png"
-                }
+                src={openIndex === index ? "/minus.png" : "/plus.png"}
                 alt={openIndex === index ? "Collapse" : "Expand"}
-                className="w-6 h-6 transition-transform duration-200 hover:scale-110"
+                className="w-6 h-6 transition-transform duration-200 hover:scale-110 active:scale-95"
                 style={{ transform: openIndex === index ? "rotate(180deg)" : "rotate(0deg)" }}
               />
             </button>
+
 
             {/* Expand/Collapse Answer with Animation */}
             <AnimatePresence>
@@ -100,9 +97,10 @@ const FAQ = () => {
           <p className="text-gray-600 text-center mt-2">
             Can't find the answer your are looking for? Please chat to our friendly team.
           </p><br/>
-          <button className="mt-4 bg-red-500 transition-transform duration-200 hover:scale-109 text-white px-6 py-2 rounded-lg text-lg font-medium hover:bg-red-700">
+          <button className="mt-4 bg-red-500 transition-transform duration-200 hover:scale-110 active:scale-95 text-white px-6 py-2 rounded-lg text-lg font-medium hover:bg-red-700 active:bg-red-700">
             Get in Touch
           </button>
+
           </div>
           </div>
       </div>

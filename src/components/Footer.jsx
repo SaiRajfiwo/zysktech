@@ -18,7 +18,10 @@ const Footer = () => {
             <h3 className="text-gray-950 font-semibold mb-4">{title}</h3>
             <ul className="space-y-2">
               {links.map((link, index) => (
-                <li key={index} className="hover:text-rose-700 transition-transform duration-200 hover:scale-104 cursor-pointer flex items-center">
+                <li
+                  key={index}
+                  className="hover:text-rose-700 transition-transform duration-200 hover:scale-105 active:scale-95 active:text-rose-700 cursor-pointer flex items-center"
+                >
                   {link}
                   {title === "Product" && link === "Solutions" && (
                     <img src="/new.png" alt="new" className="ml-2 mt-1 w-8 h-4" />
@@ -31,13 +34,12 @@ const Footer = () => {
       </div>
 
       {/* Copyright and Logo Section (Responsive) */}
-        <div className="border-t border-gray-200 mt-16 py-2 px-6 flex flex-col sm:flex-row items-center justify-between text-center sm:text-left">
-          <img src="/zysk.png" alt="Zysk Logo" className="w-20 sm:w-24 sm:ml-20 mb-2 sm:mb-0" />
-          <p className="text-gray-400 text-sm sm:text-m sm:mr-24">
-            © 2077 zysktechnologies. All rights reserved.
-          </p>
-        </div>
-
+      <div className="border-t border-gray-200 mt-16 py-2 px-6 flex flex-col sm:flex-row items-center justify-between text-center sm:text-left">
+        <img src="/zysk.png" alt="Zysk Logo" className="w-20 sm:w-24 sm:ml-20 mb-2 sm:mb-0" />
+        <p className="text-gray-400 text-sm sm:text-m sm:mr-24">
+          © 2077 zysktechnologies. All rights reserved.
+        </p>
+      </div>
     </footer>
   );
 };

@@ -6,17 +6,19 @@ const Hero = () => {
       <div className="container mx-auto flex flex-col items-center text-center md:text-center">
         
        {/* New Feature and Link */}
-      <div className="md:w-1/1 mb-6 flex justify-center">
-        <a
-          href="#"
-          className="text-rose-600 transition-transform duration-200 hover:scale-109 inline-flex font-semibold items-center text-xs bg-white border border-rose-600 px-2 py-1 rounded-full"
-        >
-          <span className="bg-white transition-transform duration-200 hover:scale-109 text-rose-600 px-2 py-0.5 font-semibold rounded-full mr-4 text-xs border border-rose-600">
-            New Feature
-          </span>
-          Check out the team dashboard <img src="/rightarrow.png" alt="arrow"></img>
-        </a>
-      </div>
+        <div className="md:w-1/1 mb-6 flex justify-center">
+          <a
+            href="#"
+            className="text-rose-600 transition-transform duration-200 hover:scale-109 active:scale-95 inline-flex font-semibold items-center text-xs bg-white border border-rose-600 px-2 py-1 rounded-full"
+          >
+            <span className="bg-white transition-transform duration-200 hover:scale-109 active:scale-95 text-rose-600 px-2 py-0.5 font-semibold rounded-full mr-4 text-xs border border-rose-600">
+              New Feature
+            </span>
+            Check out the team dashboard 
+            <img src="/rightarrow.png" alt="arrow" className="ml-2" />
+          </a>
+        </div>
+
 
 
         {/* Hero Title and Description */}
@@ -30,16 +32,19 @@ const Hero = () => {
         <br/>
 
         {/* Buttons */}
-        <div className="mt-6 flex flex-col md:flex-row justify-center space-x-0 md:space-x-6 space-y-4 md:space-y-0">
-          <button className="w-full md:w-auto transition-transform duration-200 hover:scale-109 bg-white hover:bg-gray-300 text-black border border-black px-5 py-2 rounded-full flex items-center justify-center">
-            <img src="/play.png" alt="icon" className="w-5 h-5 mr-2" />
-            Demo
-          </button>
+          <div className="mt-6 flex flex-col md:flex-row justify-center space-x-0 md:space-x-6 space-y-4 md:space-y-0">
+            {/* Demo Button */}
+            <button className="w-full md:w-auto transition-transform duration-200 hover:scale-109 active:scale-95 bg-white hover:bg-gray-300 active:bg-gray-400 text-black border border-black px-5 py-2 rounded-full flex items-center justify-center">
+              <img src="/play.png" alt="icon" className="w-5 h-5 mr-2" />
+              Demo
+            </button>
 
-          <button className="w-full md:w-auto transition-transform duration-200 hover:scale-109 bg-red-500 text-white px-6 py-2 rounded-full flex items-center justify-center hover:bg-red-700">
-            Sign Up
-          </button>
-        </div>
+            {/* Sign Up Button */}
+            <button className="w-full md:w-auto transition-transform duration-200 hover:scale-109 active:scale-95 bg-red-500 text-white px-6 py-2 rounded-full flex items-center justify-center hover:bg-red-700 active:bg-red-800">
+              Sign Up
+            </button>
+          </div>
+
         <br/><br/>
 
         {/* Hero Image */}

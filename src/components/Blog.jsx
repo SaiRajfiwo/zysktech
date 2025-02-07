@@ -37,7 +37,7 @@ const Blog = () => {
       {/* Blog Header */}
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-rose-600 text-lg font-semibold">Our Blog</h2>
-        <button className="bg-red-500 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition-transform duration-200 hover:scale-109">
+        <button className="bg-red-500 text-white px-6 py-2 rounded-lg hover:bg-red-700 active:bg-red-700 transition-transform duration-200 hover:scale-110 active:scale-95">
           View All Posts
         </button>
       </div>
@@ -54,9 +54,13 @@ const Blog = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
-            whileHover={{ scale: 1.05 }}
+            className="rounded-lg"
           >
-            <div className="bg-white shadow-lg rounded-lg p-4 relative">
+            <motion.div
+              whileHover={{ scale: 1.05 }} // Hover effect for desktop
+              whileTap={{ scale: 0.95, backgroundColor: "#f3f4f6" }} // Tap effect for mobile
+              className="bg-white shadow-lg rounded-lg p-4 relative"
+            >
               <img src={blog.image} alt={blog.title} className="w-full h-56 object-cover rounded-lg" />
               
               {/* Red Heading */}
@@ -90,10 +94,9 @@ const Blog = () => {
                   <p className="text-gray-500 text-sm">{blog.date}</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </motion.div>
         ))}
-        <br/>
       </div>
     </div>
   );
